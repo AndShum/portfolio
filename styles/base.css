@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  float: left;
+  margin: 0 10px 10px 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+i {
+  padding-right: 5px;
+}

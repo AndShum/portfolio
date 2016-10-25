@@ -3,6 +3,10 @@
   <head>
     <meta name="viewport" content="width=decvice-width, initial-scale=1">
     <meta charset="utf-8">
+    <script src="https://use.fontawesome.com/9c758532cc.js"></script>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/module.css">
     <title>Andrew Shumway Portfolio</title>
   </head>
   <body>
@@ -12,14 +16,49 @@
       </h1>
     </header>
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">LinkedIn</a></li>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">GitHub</a></li>
-      </ul>
+      <div class="hamburger">
+        <i class="fa fa-align-justify hamburger_icon" aria-hidden="true"></i>
+
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><i class="fa fa-linkedin" aria-hidden="true"></i><a href="#">LinkedIn</a></li>
+          <li><i class="fa fa-facebook" aria-hidden="true"></i><a href="#">Facebook</a></li>
+          <li><i class="fa fa-github" aria-hidden="true"></i><a href="#">GitHub</a></li>
+        </ul>
+      </div>
     </nav>
 
+    <section class="wrapper">
+
+      <img src="img/IMG_0087.jpg" class="profile_pic" alt="">
+
+      <div>
+         <p>A short line about me. Lorem ipsum dolor sit amet, dictumst nisl enim, amet quisque felis nam, nulla cras donec, pellentesque sapien ut ac eget vehicula magnis. Orci auctor laudantium, venenatis feugiat arcu interdum a. In vitae nunc ultricies neque mi, mauris turpis donec tellus nemo dis eros, amet maecenas libero est tincidunt enim wisi.</p>
+      </div>
+
+      <section class="project_display">
+
+        <div class="projects">
+          <h2>Bus Mall</h2>
+          <a href="https://andshum.github.io/bus_mall/"><img src="img/bus_mall.png" alt=""></a>
+          <p>Some info about the bus mall site.</p>
+        </div>
+
+        <div class="projects">
+          <h2>Cookie Stand</h2>
+          <a href="https://andshum.github.io/cookie_stand/"><img src="img/cookie_stand.png" alt=""></a>
+          <p>Some info about the cookie stand site.</p>
+        </div>
+
+        <div class="projects">
+          <h2>Mars Mission</h2>
+          <a href="#"><img src="img/mars_mission.png" alt=""></a>
+          <p>Some info about the mars mission game.</p>
+        </div>
+
+      </section>
+
+    </section>
 
   </body>
 </html>

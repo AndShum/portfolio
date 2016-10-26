@@ -11,9 +11,9 @@ function ProjectConstuctor(options){
 
 ProjectConstuctor.prototype.toHtml = function(){
 
-  var newProjectConstructor = $('div.template').clone();
+  var $newProjectConstructor = $('div.template').clone();
 
-  $newProjectConstructor.removeclass('template');
+  $newProjectConstructor.removeClass('template');
   $newProjectConstructor.find('h2').text(this.siteName);
   $newProjectConstructor.find('a').attr('href', this.siteUrl);
   $newProjectConstructor.find('img').attr('src', this.imageSrc);
@@ -23,10 +23,10 @@ ProjectConstuctor.prototype.toHtml = function(){
   return $newProjectConstructor;
 };
 
-projects_list.forEach(function(){
-  projects.push(new ProjectConstuctor());
+projects_list.forEach(function(list){
+  projects.push(new ProjectConstuctor(list));
 });
 
-projects.forEach(function(){
-  $('#project_display').append(div.toHtml());
+projects.forEach(function(displayList){
+  $('#project_display').append(displayList.toHtml());
 });

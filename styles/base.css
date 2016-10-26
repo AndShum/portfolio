@@ -17,3 +17,7 @@ a {
 i {
   padding-right: 5px;
 }
+
+.template {
+  display: none;
+}

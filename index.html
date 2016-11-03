@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/module.css">
     <title>Andrew Shumway Portfolio</title>
+    <script id="projects_template" type="text/x-handlebars-template">
+      <div id="projects">
+        <h2>{{siteName}}</h2>
+        <a href="{{siteUrl}}"><img src="{{imageSrc}}" alt="#"></a>
+        <p>{{siteInfo}}</p>
+      </div>
+    </script>
   </head>
   <body>
     <header>
@@ -35,11 +42,11 @@
       </div>
 
       <section id="project_display">
-        <div class="template">
+        <!-- <div class="template">
           <h2>Site Name</h2>
           <a href="#"><img src="#" alt="#"></a>
           <p>Some info about the project site</p>
-        </div>
+        </div> -->
 
 
 
@@ -66,6 +73,7 @@
     </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="vendor/scripts/handlebars.js"></script>
     <script src="scripts/projects_list.js"></script>
     <script src="scripts/project_display.js"></script>
   </body>

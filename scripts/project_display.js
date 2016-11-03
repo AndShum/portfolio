@@ -11,16 +11,10 @@ function ProjectConstuctor(options){
 
 ProjectConstuctor.prototype.toHtml = function(){
 
-  var $newProjectConstructor = $('div.template').clone();
+  var getTemplate = $('#projects_template').html();
+  var compileTemplate = handlebars.compile(getTemplate);
+  return compileTemplate(this);
 
-  $newProjectConstructor.removeClass('template');
-  $newProjectConstructor.find('h2').text(this.siteName);
-  $newProjectConstructor.find('a').attr('href', this.siteUrl);
-  $newProjectConstructor.find('img').attr('src', this.imageSrc);
-  $newProjectConstructor.find('img').attr('alt', this.imageAlt);
-  $newProjectConstructor.find('p').text(this.siteInfo);
-
-  return $newProjectConstructor;
 };
 
 projects_list.forEach(function(list){

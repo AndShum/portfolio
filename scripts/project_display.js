@@ -12,7 +12,7 @@ function ProjectConstuctor(options){
 ProjectConstuctor.prototype.toHtml = function(){
 
   var getTemplate = $('#projects_template').html();
-  var compileTemplate = handlebars.compile(getTemplate);
+  var compileTemplate = Handlebars.compile(getTemplate);
   return compileTemplate(this);
 
 };

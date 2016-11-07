@@ -1,0 +1,36 @@
+.about_me {
+  clear: both;
+}
+
+a img {
+  border: 1px solid black;
+}
+
+.hamburger_icon {
+  position: absolute;
+  right: 0;
+  font-size: 25px;
+  padding: 5px;
+}
+
+.hamburger ul {
+  display: none;
+}
+
+.hamburger:hover ul {
+  display: block;
+}
+
+@media screen and (min-width: 760px){
+  .hamburger_icon {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  ul li {
+    display: inline;
+  }
+}

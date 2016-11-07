@@ -1,0 +1,36 @@
+nav ul {
+  padding: 0;
+  clear: left;
+}
+
+li {
+  list-style: none;
+  padding: 10px;
+}
+
+li:hover {
+  background-color: lightgrey;
+}
+
+
+@media screen and (min-width: 760px){
+
+  nav ul {
+    float: right;
+    clear: none;
+  }
+
+  li {
+    display: inline;
+  }
+
+  .profile_pic {
+    clear: both;
+  }
+
+  .project_display {
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
